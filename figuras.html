@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./desktop.css" media="(min-width: 1024px)">
+    
+   
+    
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras Geométricas
+        </h1>
+        <p>Este es el primer taller del curso prático de JavaScript</p>
+    </header>
+    <main class="container">
+        <!-- cuadrados -->
+    <section class="squares">
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <img src="https://images.vexels.com/media/users/3/142851/isolated/lists/7b81f30713ac269b64882ecf12a2e1c6-logotipo-cubico-cuadrado-3d.png" alt="cuadrado">
+        <form action="">
+            <label for="inputCuadrado" class="squares_label">
+                Escribe cuánto mide el lado de tu cuadrado :
+            </label>
+            <input type="number" id="inputCuadrado">
+            <button type="button" onclick="Calcular()+Calcular2()">
+                Calcular 
+            </button>
+            <p>El área del cuadrado es :</p>
+            <p id="resultado"></p>
+            <p>El perimetro del cuadrado es :</p>
+            <p id="resultado2"></p>  
+            <button type="reset">Reiniciar</button> 
+        </form>
+    </section>
+
+<!-- triangulos -->
+    <section class="triangules">
+        <h2>Calcula el área y el perímetro de un triangulo</h2>
+        <img src="https://image.spreadshirtmedia.net/image-server/v1/mp/compositions/T1459A839PA4459PT28D168617364FS1749/views/1,width=378,height=378,appearanceId=839,backgroundColor=FFFFFF,noPt=true/figuras-imposibles-triangulo-ilusion-optica-pegatina.jpg" alt="triangule">
+        <p class="sub-tittle">
+            Escribe cuánto mide los lados de tu triangulo :
+        </p>
+        <form action="">
+            <label for="lado1">
+                    Lado 1:
+            </label>
+            <input type="number" id="lado1">
+            <label for="lado2">
+                    Lado 2:
+            </label>
+            <input type="number" id="lado2">
+            <label for="base">
+                    Base: 
+            </label>
+            <input type="number" id="base">
+            <label for="altura">
+                    Altura:
+            </label>
+            <input type="number" id="altura">
+        
+            <button type="button" onclick="Calcular3()+Calcular4()">
+                Calcular
+            </button>
+            <p>El perimetro del triangulo es :</p>
+            <p id="resultado3"></p>
+            <p>El área del triangulo es :</p>
+            <p id="resultado4"></p>
+            <button type="reset">Reiniciar</button>
+        </form>
+    </section>
+
+<!-- circulos -->
+
+    <section class="circles">
+        <h2>Calcula el área y el perímetro de un círculo</h2>
+        <img src="https://cdn.picpng.com/sphere/sphere-blue-glossy-3d-round-87037.png" alt="circle">
+        <p class="sub-tittle">Escribe el radio de tu círculo :</p>
+        <form id="form3">
+            <label for="radio">
+                Radio:
+            </label>
+            <input type="number" id="radio">
+            <button type="button" onclick="Calcular5()+Calcular6()+Calcular7()">
+                Calcular
+            </button>
+            <p>El díametro del círculo es :</p>
+            <p id="resultado5"></p>
+            <p>El perímetro del círculo es :</p>
+            <p id="resultado6"></p>
+            <p>El área del triangulo es :</p>
+            <p id="resultado7"></p>
+            <button type="reset">Reiniciar</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <a href=""><span><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/></span> Facebook</a>
+        <a href=""><span><img src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled--v1.png"/></span> Linkedin</a>
+    </footer>
+
+    <script src="./figuras.js">
+    </script>
+</body>
+</html>

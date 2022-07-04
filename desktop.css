@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    height: 100vh;
+    min-width: 850px;
+    max-width: 1920px;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    
+}
+.container {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-areas: "squares triangules circles";
+    background: #FFFFFF;
+    justify-content: space-evenly;
+}
+form p{
+    margin: 10px 0;
+}
+.container .squares {
+    display: flex;
+    flex-direction: column;
+}
+.squares form {
+    margin-top: 10px;
+}
+.container .triangules {
+    display: flex;
+    flex-direction: column;
+}
+.triangules img {
+    margin: 8px auto;
+}
+.triangules form label {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 4px;
+}
+.container .circles {
+    display: flex;
+    flex-direction: column;
+}
+.circles img {
+    margin: 6px auto;
+}
+footer {
+    width: 100%;
+    height: 10vh;   
+}
