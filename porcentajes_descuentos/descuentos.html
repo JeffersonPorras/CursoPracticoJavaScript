@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./descuentos.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes  <br/><span> y </span><br/> descuentos</h1>     
+    </header>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form action="">
+            <label for="inputPrice">Escribe el precio de tu producto :</label>
+            <div><span>$</span><input type="number" id="inputPrice"></div>   
+
+            <label for="inputDiscount">Escribe el descuento de tu producto :</label>
+            <div><span>%</span><input type="number" id="inputDiscount" ></div>
+
+            <button type="button" onclick="calcularDiscount()">
+                Calcular el precio con descuento
+            </button>
+
+            <label for="inputCoupon">Redimir Cupon</label>
+            <input type="text" id="inputCoupon" class="letters">
+            
+            <button type="button" onclick="calcularCoupon()">Calcular descuento + Cupon</button>
+
+            <p id="resultPrice"></p>
+            <p id="resultTotal"></p>
+
+            <div class="coupons">
+                <p>Cupones</p>
+            <button type="button">Exito</button>
+            <button type="button">Jumbo</button>
+            <button type="button">Olimpica</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <img src="https://img.icons8.com/ios-filled/50/000000/facebook-like.png"/>
+    </footer>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
